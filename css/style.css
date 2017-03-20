@@ -1,0 +1,16 @@
+.hidden {
+    display: none;
+}
+
+.step-indicator {
+
+}
+
+.step-indicator a:after {
+    content: '>';
+    width: 1rem;
+}
+
+.step-indicator a:last-child:after {
+    content: '';
+}

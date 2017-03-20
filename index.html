@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <a class="logo" href="#start">
+            <img src="img/fundawonen-logo.svg" alt="Funda logo">
+        </a>
+        <a href="#matches">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 533.333 533.333" style="enable-background:new 0 0 533.333 533.333;" xml:space="preserve">
+        <g>
+            <path d="M165.494,533.333c-35.545-73.962-16.616-116.343,10.703-156.272c29.917-43.728,37.627-87.013,37.627-87.013   s23.518,30.573,14.11,78.39c41.548-46.25,49.389-119.938,43.115-148.159c93.914,65.63,134.051,207.737,79.96,313.054   c287.695-162.776,71.562-406.339,33.934-433.775c12.543,27.435,14.922,73.88-10.416,96.42C331.635,33.333,225.583,0,225.583,0   c12.543,83.877-45.466,175.596-101.404,244.13c-1.965-33.446-4.053-56.525-21.641-88.531   C98.59,216.357,52.157,265.884,39.583,326.76C22.551,409.2,52.341,469.562,165.494,533.333z" fill="#FFFFFF"/>
+        </g>
+        </svg>
+        </a>
+    </div>
+
+</header>
+
+<div class="step-indicator">
+    <div class="container">
+        <a href="#start">
+            Start
+        </a>
+        <a href="#location">
+            Location
+        </a>
+        <a href="#kind">
+            Kind
+        </a>
+        <a href="#price">
+            Price
+        </a>
+        <a href="#buy-rent">
+            Huis of Appartement
+        </a>
+    </div>
+</div>
+
+<section id="start" class="">
+    <div class="container">
+        <h2>Welkom</h2>
+        <p>Vind jouw nieuwe droomhuis met Funda-tinder!</p>
+        <p>Geef eerst jouw voorkeuren aan om het ultieme droomhuis te vinden. Je word stap voor stap geleid door de belangrijkste kenmerken van jouw droomhuis. Daarna kun je beginnen met swipen!</p>
+        <p>Druk op start</p>
+        <a href="#location" class="submit">Start</a>
+    </div>
+</section>
+
+<section id="location" class="">
+    <div class="container">
+        <h2>Location</h2>
+        <p>Waar wil je wonen?
+        </p>
+        <form>
+            <legend>Locatie</legend>
+            <input type="text" class="input" placeholder="Plaats">
+            <a href="#kind" class="submit">next</a>
+        </form>
+    </div>
+</section>
+
+<section id="kind" class="">
+    <div class="container">
+        <h2>Kind</h2>
+        <p>Kies je soort, huur of koop?</p>
+        <form>
+            <input type="radio" name="kind" value="koop" id="koop" checked="checked">
+            <label class="label" for="koop">Koop</label>
+            <input type="radio" name="kind" value="huur" id="huur">
+            <label class="label" for="huur">Huur</label>
+
+            <a href="#price" class="submit">next</a>
+        </form>
+    </div>
+</section>
+
+<section id="price" class="">
+    <div class="container">
+        <h2>Price</h2>
+        <p>Kies de prijs</p>
+        <form>
+            <legend>Prijs</legend>
+            <div class="price-buy hidden">
+                <div class="price-container">
+                    <label for="min-price-buy">van</label>
+                    <select id="min-price-buy">
+                        <option value="0">€ 0</option>
+                        <option value="50000">€ 50.000</option>
+                        <option value="75000">€ 75.000</option>
+                        <option value="100000">€ 100.000</option>
+                        <option value="125000">€ 125.000</option>
+                        <option value="150000">€ 150.000</option>
+                        <option value="175000">€ 175.000</option>
+                        <option value="200000">€ 200.000</option>
+                        <option value="225000">€ 225.000</option>
+                        <option value="250000">€ 250.000</option>
+                        <option value="275000">€ 275.000</option>
+                        <option value="300000">€ 300.000</option>
+                        <option value="325000">€ 325.000</option>
+                        <option value="350000">€ 350.000</option>
+                        <option value="375000">€ 375.000</option>
+                        <option value="400000">€ 400.000</option>
+                        <option value="450000">€ 450.000</option>
+                        <option value="500000">€ 500.000</option>
+                        <option value="550000">€ 550.000</option>
+                        <option value="600000">€ 600.000</option>
+                        <option value="650000">€ 650.000</option>
+                        <option value="700000">€ 700.000</option>
+                        <option value="750000">€ 750.000</option>
+                        <option value="800000">€ 800.000</option>
+                        <option value="900000">€ 900.000</option>
+                        <option value="1000000">€ 1.000.000</option>
+                        <option value="1500000">€ 1.500.000</option>
+                        <option value="2000000">€ 2.000.000</option>
+                    </select>
+                </div>
+                <div class="price-container">
+                    <label for="max-price-buy">tot</label>
+                    <select id="max-price-buy">
+                        <option value="50000">€ 50.000</option>
+                        <option value="75000">€ 75.000</option>
+                        <option value="100000">€ 100.000</option>
+                        <option value="125000">€ 125.000</option>
+                        <option value="150000">€ 150.000</option>
+                        <option value="175000">€ 175.000</option>
+                        <option value="200000">€ 200.000</option>
+                        <option value="225000">€ 225.000</option>
+                        <option value="250000">€ 250.000</option>
+                        <option value="275000">€ 275.000</option>
+                        <option value="300000">€ 300.000</option>
+                        <option value="325000">€ 325.000</option>
+                        <option value="350000">€ 350.000</option>
+                        <option value="375000">€ 375.000</option>
+                        <option value="400000">€ 400.000</option>
+                        <option value="450000">€ 450.000</option>
+                        <option value="500000">€ 500.000</option>
+                        <option value="550000">€ 550.000</option>
+                        <option value="600000">€ 600.000</option>
+                        <option value="650000">€ 650.000</option>
+                        <option value="700000">€ 700.000</option>
+                        <option value="750000">€ 750.000</option>
+                        <option value="800000">€ 800.000</option>
+                        <option value="900000">€ 900.000</option>
+                        <option value="1000000">€ 1.000.000</option>
+                        <option value="1500000">€ 1.500.000</option>
+                        <option value="2000000" selected>€ 2.000.000</option>
+                        <option value="">Geen maximum</option>
+                    </select>
+                </div>
+            </div>
+            <div class="price-rent hidden">
+                <div class="price-container">
+                    <label for="min-price-rent">van</label>
+                    <select id="min-price-rent">
+                        <option value="0">€ 0 p/m</option>
+                        <option value="100">€ 100 p/m</option>
+                        <option value="200">€ 200 p/m</option>
+                        <option value="300">€ 300 p/m</option>
+                        <option value="400">€ 400 p/m</option>
+                        <option value="500">€ 500 p/m</option>
+                        <option value="600">€ 600 p/m</option>
+                        <option value="700">€ 700 p/m</option>
+                        <option value="800">€ 800 p/m</option>
+                        <option value="900">€ 900 p/m</option>
+                        <option value="1000">€ 1000 p/m</option>
+                        <option value="1250">€ 1250 p/m</option>
+                        <option value="1500">€ 1500 p/m</option>
+                        <option value="1750">€ 1750 p/m</option>
+                        <option value="2000">€ 2000 p/m</option>
+                        <option value="2500">€ 2500 p/m</option>
+                        <option value="3000">€ 3000 p/m</option>
+                        <option value="4000">€ 4000 p/m</option>
+                        <option value="5000">€ 5000 p/m</option>
+                        <option value="6000">€ 6000 p/m</option>
+                    </select>
+                </div>
+                <div class="price-container">
+                    <label for="max-price-rent">tot</label>
+                    <select id="max-price-rent">
+                        <option value="0">€ 0 p/m</option>
+                        <option value="100">€ 100 p/m</option>
+                        <option value="200">€ 200 p/m</option>
+                        <option value="300">€ 300 p/m</option>
+                        <option value="400">€ 400 p/m</option>
+                        <option value="500">€ 500 p/m</option>
+                        <option value="600">€ 600 p/m</option>
+                        <option value="700">€ 700 p/m</option>
+                        <option value="800">€ 800 p/m</option>
+                        <option value="900">€ 900 p/m</option>
+                        <option value="1000">€ 1000 p/m</option>
+                        <option value="1250">€ 1250 p/m</option>
+                        <option value="1500">€ 1500 p/m</option>
+                        <option value="1750">€ 1750 p/m</option>
+                        <option value="2000">€ 2000 p/m</option>
+                        <option value="2500">€ 2500 p/m</option>
+                        <option value="3000">€ 3000 p/m</option>
+                        <option value="4000">€ 4000 p/m</option>
+                        <option value="5000">€ 5000 p/m</option>
+                        <option value="6000">€ 6000 p/m</option>
+                        <option value="">Geen maximum p/m</option>
+                    </select>
+                </div>
+            </div>
+
+            <a href="#buy-rent" class="submit">next</a>
+
+        </form>
+    </div>
+</section>
+
+<section id="buy-rent">
+    <div class="container">
+        <h2>Kies je soort, huis of appartement?</h2>
+
+        <input type="radio" name="choice" value="huis" id="huis" checked="checked">
+        <label class="label" for="huis">Huis</label>
+        <input type="radio" name="choice" value="appartement" id="appartement">
+        <label class="label" for="appartement">Appartement</label>
+
+        <a href="#start-loader" class="submit">next</a>
+    </div>
+</section>
+
+<section id="start-loader">
+    <div class="container">
+        <p>Top! Je bent helemaal klaar om te beginnen! Druk snel op starten</p>
+        <a href="#overview" class="submit">Start</a>
+    </div>
+</section>
+
+<section id="overview">
+    <div class="container">
+        <div class="objects">
+            <div class="objects__items" data-bind="objectId" id="">
+                <a class="detail-link" data-bind="objectUrl" href="">
+                    <img data-bind="objectImage" src="" alt="object image">
+                    <h2 data-bind="objectAdres"></h2>
+                    <h3 data-bind="objectPrice"></h3>
+                    <div data-bind="objectPostCode"></div>
+                </a>
+                    <div class="item__likebox">
+                        <a href="#" class="dislike">Dislike</a>
+                        <a href="#" class="like">Like</a>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="detail">
+    <div class="container container--white">
+        <a href="#overview">← Terug</a>
+        <h1 data-bind="objectName"></h1>
+        <span data-bind="objectPostcode"></span>
+        <div data-bind="objectPrice"></div>
+        <img data-bind="objectImage" src="" alt="">
+
+        <div class="summary">
+            <p data-bind="objectSummary"></p>
+            <div class="kenmerken">
+                <h2>Kenmerken</h2>
+                <span>Overdracht</span>
+                <ul>
+                    <li data-bind="vraagPrijs"></li>
+                    <li data-bind="aangebodenSinds"</li>
+                    <li data-bind="status"></li>
+                    <li data-bind="aanvaarding"></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="matches">
+    <div class="container">
+        <span class="error">No matches at this moment, start swiping!</span>
+        <h2 data-bind="objectName"></h2>
+    </div>
+</section>
+
+<div id="loader" class="hidden">
+    <div class="container">
+        <div class="spinner"></div>
+    </div>
+</div>
+
+<!--<footer>-->
+    <!--<p>Madeby: Pierre Bleeker</p>-->
+<!--</footer>-->
+
+<!--- Libs -->
+<script src="js/libs/routie.js"></script>
+<script src="js/libs/aja.js"></script>
+<script src="js/libs/transparency.min.js"></script>
+
+<!--- modules -->
+<script src="js/modules/config.js"></script>
+<script src="js/modules/constants.js"></script>
+<script src="js/modules/loader.js"></script>
+<script src="js/modules/data.js"></script>
+<script src="js/modules/inputs.js"></script>
+<script src="js/modules/routes.js"></script>
+<script src="js/modules/launcher.js"></script>
+
+</body>
+</html>

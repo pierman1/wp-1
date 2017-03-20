@@ -1,1 +1,2 @@
-# wp-1
+# WP1
+First project of Web Development Minor
